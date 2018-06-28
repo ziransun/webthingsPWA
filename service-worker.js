@@ -15,9 +15,8 @@
 var dataCacheName = 'webThings-v1';
 var cacheName = 'webthingsPWA-1';
 var filesToCache = [
-  '/',
-  '/index.html',
-  '/js/index.js'
+  'index.html',
+  'js/index.js'
 ];
 
 self.addEventListener('install', function(e) {
