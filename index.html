@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- SPDX-License-Identifier: MPL-2.0 -->
-<!-- 
+<!--
      Copyright 2018-present Samsung Electronics France SAS, and other contributors
      This Source Code Form is subject to the terms of the Mozilla Public
      License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -8,13 +8,13 @@
   -->
 <html lang="en">
 <head>
-<meta name="theme-color" content="#317EFB"/>
+<meta name="theme-color" content="#305067"/>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <meta name="description" content="WebThings" />
 <title>WebThings</title>
-<link rel="icon" 
-      type="image/png" 
+<link rel="icon"
+      type="image/png"
       href="images/favicon-16x16.png">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <!-- TODO add manifest here -->
@@ -25,31 +25,24 @@
 <body>
 <div id="main" class="page">
 <div class="contents">
-<h1>WebThings</h1>
+<h1><span>Web</span>Things</h1>
 <form name="form">
 <!--<input type="button" onclick="main()" value="Run" /> -->
 <input type="button" id="run" value="Run" />
 <input type="button" id="clear" value="Clear" />
 <input type="button" id="forget" value="Forget" />
-<p/>
-  
-<label for="url">Base URL: ( ie: https://$name.mozilla-iot.org )<br/>
-<input type="text" name="url" value="http://localhost:8080" onchange="localStorage['url'] = this.value" /></label>
-<p/>
-Endpoint: ( ie: /things/0/properties/on )<br/>
-<label for="endpoint">Endpoint:<input type="text" name="endpoint" value="/things" /></label> 
 
-<p/>
+<label for="url">Base URL <span>e.g. https://$name.mozilla-iot.org</span></label>
+<input type="text" id="url" name="url" value="http://localhost:8080" onchange="localStorage['url'] = this.value" /></label>
 
-Console:<br />
+<label for="endpoint">Endpoint <span>e.g. /things/0/properties/on</span></label>
+<input type="text" id="endpoint" name="endpoint" value="/things" />
 
 <div class="textarea">
-<label for="textarea">Textarea:<textarea rows="8" cols="40" name=console></textarea></label> 
-
-</textarea>
+  <label for="textarea">Console</label>
+  <textarea id="textarea" rows="8" cols="40" name=console></textarea>
 </div>
 
-<p />
 </form>
 </div>
 </div>
